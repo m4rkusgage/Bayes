@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char BayesClassifierVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BayesClassifier/PublicHeader.h>
 
-
+#import <BayesClassifier/NaiveBayesClassifier.h>
