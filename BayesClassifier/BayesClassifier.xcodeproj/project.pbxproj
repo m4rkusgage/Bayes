@@ -8,12 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		8C0C5E1F1FACF43600A4CEBA /* BayesClassifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0C5E1D1FACF43600A4CEBA /* BayesClassifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C0C5E2D1FACF5D700A4CEBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0C5E2C1FACF5D700A4CEBA /* AppDelegate.m */; };
+		8C0C5E301FACF5D700A4CEBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0C5E2F1FACF5D700A4CEBA /* ViewController.m */; };
+		8C0C5E331FACF5D700A4CEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0C5E311FACF5D700A4CEBA /* Main.storyboard */; };
+		8C0C5E351FACF5D700A4CEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0C5E341FACF5D700A4CEBA /* Assets.xcassets */; };
+		8C0C5E381FACF5D700A4CEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0C5E361FACF5D700A4CEBA /* LaunchScreen.storyboard */; };
+		8C0C5E3B1FACF5D700A4CEBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0C5E3A1FACF5D700A4CEBA /* main.m */; };
+		8C0C5E3F1FACF61100A4CEBA /* BayesClassifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0C5E1A1FACF43600A4CEBA /* BayesClassifier.framework */; };
+		8C0C5E401FACF61100A4CEBA /* BayesClassifier.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0C5E1A1FACF43600A4CEBA /* BayesClassifier.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C0C5E411FACF61100A4CEBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C0C5E111FACF43600A4CEBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C0C5E191FACF43600A4CEBA;
+			remoteInfo = BayesClassifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C0C5E431FACF61100A4CEBA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C0C5E401FACF61100A4CEBA /* BayesClassifier.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8C0C5E1A1FACF43600A4CEBA /* BayesClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BayesClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0C5E1D1FACF43600A4CEBA /* BayesClassifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BayesClassifier.h; sourceTree = "<group>"; };
 		8C0C5E1E1FACF43600A4CEBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C0C5E291FACF5D700A4CEBA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C0C5E2B1FACF5D700A4CEBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C0C5E2C1FACF5D700A4CEBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C0C5E2E1FACF5D700A4CEBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8C0C5E2F1FACF5D700A4CEBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8C0C5E321FACF5D700A4CEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C0C5E341FACF5D700A4CEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C0C5E371FACF5D700A4CEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C0C5E391FACF5D700A4CEBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C0C5E3A1FACF5D700A4CEBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +66,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C0C5E261FACF5D700A4CEBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C0C5E3F1FACF61100A4CEBA /* BayesClassifier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				8C0C5E1C1FACF43600A4CEBA /* BayesClassifier */,
+				8C0C5E2A1FACF5D700A4CEBA /* Example */,
 				8C0C5E1B1FACF43600A4CEBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				8C0C5E1A1FACF43600A4CEBA /* BayesClassifier.framework */,
+				8C0C5E291FACF5D700A4CEBA /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,6 +102,22 @@
 				8C0C5E1E1FACF43600A4CEBA /* Info.plist */,
 			);
 			path = BayesClassifier;
+			sourceTree = "<group>";
+		};
+		8C0C5E2A1FACF5D700A4CEBA /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				8C0C5E2B1FACF5D700A4CEBA /* AppDelegate.h */,
+				8C0C5E2C1FACF5D700A4CEBA /* AppDelegate.m */,
+				8C0C5E2E1FACF5D700A4CEBA /* ViewController.h */,
+				8C0C5E2F1FACF5D700A4CEBA /* ViewController.m */,
+				8C0C5E311FACF5D700A4CEBA /* Main.storyboard */,
+				8C0C5E341FACF5D700A4CEBA /* Assets.xcassets */,
+				8C0C5E361FACF5D700A4CEBA /* LaunchScreen.storyboard */,
+				8C0C5E391FACF5D700A4CEBA /* Info.plist */,
+				8C0C5E3A1FACF5D700A4CEBA /* main.m */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +152,25 @@
 			productReference = 8C0C5E1A1FACF43600A4CEBA /* BayesClassifier.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		8C0C5E281FACF5D700A4CEBA /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C0C5E3C1FACF5D700A4CEBA /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				8C0C5E251FACF5D700A4CEBA /* Sources */,
+				8C0C5E261FACF5D700A4CEBA /* Frameworks */,
+				8C0C5E271FACF5D700A4CEBA /* Resources */,
+				8C0C5E431FACF61100A4CEBA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C0C5E421FACF61100A4CEBA /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 8C0C5E291FACF5D700A4CEBA /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +184,10 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					8C0C5E281FACF5D700A4CEBA = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 8C0C5E141FACF43600A4CEBA /* Build configuration list for PBXProject "BayesClassifier" */;
@@ -105,6 +196,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 8C0C5E101FACF43600A4CEBA;
 			productRefGroup = 8C0C5E1B1FACF43600A4CEBA /* Products */;
@@ -112,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				8C0C5E191FACF43600A4CEBA /* BayesClassifier */,
+				8C0C5E281FACF5D700A4CEBA /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +214,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C0C5E271FACF5D700A4CEBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C0C5E381FACF5D700A4CEBA /* LaunchScreen.storyboard in Resources */,
+				8C0C5E351FACF5D700A4CEBA /* Assets.xcassets in Resources */,
+				8C0C5E331FACF5D700A4CEBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +237,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C0C5E251FACF5D700A4CEBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C0C5E301FACF5D700A4CEBA /* ViewController.m in Sources */,
+				8C0C5E3B1FACF5D700A4CEBA /* main.m in Sources */,
+				8C0C5E2D1FACF5D700A4CEBA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C0C5E421FACF61100A4CEBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C0C5E191FACF43600A4CEBA /* BayesClassifier */;
+			targetProxy = 8C0C5E411FACF61100A4CEBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C0C5E311FACF5D700A4CEBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C0C5E321FACF5D700A4CEBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C0C5E361FACF5D700A4CEBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C0C5E371FACF5D700A4CEBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8C0C5E201FACF43600A4CEBA /* Debug */ = {
@@ -287,6 +427,34 @@
 			};
 			name = Release;
 		};
+		8C0C5E3D1FACF5D700A4CEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 762W2U8JVP;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gage.framework.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C0C5E3E1FACF5D700A4CEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 762W2U8JVP;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gage.framework.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -304,6 +472,15 @@
 			buildConfigurations = (
 				8C0C5E231FACF43600A4CEBA /* Debug */,
 				8C0C5E241FACF43600A4CEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C0C5E3C1FACF5D700A4CEBA /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C0C5E3D1FACF5D700A4CEBA /* Debug */,
+				8C0C5E3E1FACF5D700A4CEBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
