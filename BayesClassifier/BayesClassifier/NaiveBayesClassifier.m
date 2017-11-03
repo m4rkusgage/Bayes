@@ -83,7 +83,7 @@
     
     for (NSString *word in tokenizeWords) {
         if ([self.labelWords[label] containsObject:word]) {
-            score += 1.0;
+            score += (CGFloat)(1/[self.wordFrequency[word] integerValue]);
         }
     }
     return score;
