@@ -14,6 +14,7 @@
 - (void)trainClassifierWithString:(NSString *)string forLabel:(NSString *)label;
 - (void)trainClassifierWithDictionary:(NSDictionary *)dictionary;
 - (void)trainClassifierWithArray:(NSArray *)array;
+- (void)trainClassifierWithFile:(NSString *)fileName;
 
 //Method to check how well the classifier is trained
 - (BOOL)isString:(NSString *)string classifiedAs:(NSString *)label;
