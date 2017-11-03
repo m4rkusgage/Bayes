@@ -16,7 +16,7 @@
 		8C0C5E3B1FACF5D700A4CEBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0C5E3A1FACF5D700A4CEBA /* main.m */; };
 		8C0C5E3F1FACF61100A4CEBA /* BayesClassifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0C5E1A1FACF43600A4CEBA /* BayesClassifier.framework */; };
 		8C0C5E401FACF61100A4CEBA /* BayesClassifier.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0C5E1A1FACF43600A4CEBA /* BayesClassifier.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8C0C5E4A1FACF97400A4CEBA /* NaiveBayesClassifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0C5E481FACF97400A4CEBA /* NaiveBayesClassifier.h */; };
+		8C0C5E4A1FACF97400A4CEBA /* NaiveBayesClassifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0C5E481FACF97400A4CEBA /* NaiveBayesClassifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C0C5E4B1FACF97400A4CEBA /* NaiveBayesClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0C5E491FACF97400A4CEBA /* NaiveBayesClassifier.m */; };
 /* End PBXBuildFile section */
 
