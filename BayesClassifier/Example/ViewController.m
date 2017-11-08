@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BayesClassifier.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NaiveBayesClassifier *classifier = [[NaiveBayesClassifier alloc] init];
+    [classifier trainClassifierWithFile:@"training"];
+    
+    BOOL test = [classifier isString:@"how i want lunch" classifiedAs:@"greeting"];
 }
 
 
