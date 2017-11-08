@@ -21,6 +21,32 @@
     [self updateLabel:label withWordArray:wordBag];
 }
 
+- (void)trainClassifierWithDictionary:(NSDictionary *)dictionary {
+    [self trainClassifierWithString:dictionary[@"text"] forLabel:dictionary[@"label"]];
+}
+
+- (void)trainClassifierWithArray:(NSArray *)array {
+    for (NSDictionary *trainingDictionary in array) {
+        [self trainClassifierWithDictionary:trainingDictionary];
+    }
+}
+
+- (void)trainClassifierWithFile:(NSString *)fileName {
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    
+    NSArray *trainingSet = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    [self trainClassifierWithArray:trainingSet];
+}
+
+- (BOOL)isString:(NSString *)string classifiedAs:(NSString *)label {
+    NSString *classification = [self classifyString:[string lowercaseString]];
+    if ([classification isEqualToString:[label lowercaseString]]) {
+        return YES;
+    }
+    return NO;
+}
+
 - (NSString *)classifyString:(NSString *)string {
     NSString *currentClassification = @"UNKNOWN";
     CGFloat maxScore = 0;
@@ -31,10 +57,6 @@
             maxScore = currentScore;
             currentClassification = label;
         }
-    }
-    
-    if (!maxScore) {
-        //there is no classification
     }
     return currentClassification;
 }
@@ -51,7 +73,6 @@
         
         NSString *token = [string substringWithRange:tokenRange];
         [tokenizeWords addObject:token];
-        
     }];
     
     return tokenizeWords;
@@ -83,7 +104,7 @@
     
     for (NSString *word in tokenizeWords) {
         if ([self.labelWords[label] containsObject:word]) {
-            score += (CGFloat)(1/[self.wordFrequency[word] integerValue]);
+            score += (CGFloat)(1/[self.wordFrequency[word] doubleValue]);
         }
     }
     return score;
