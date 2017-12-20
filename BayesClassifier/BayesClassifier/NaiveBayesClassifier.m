@@ -22,7 +22,9 @@
 }
 
 - (void)trainClassifierWithDictionary:(NSDictionary *)dictionary {
-    [self trainClassifierWithString:dictionary[@"text"] forLabel:dictionary[@"label"]];
+    for (NSString *userSampleText in dictionary[@"userSays"]) {
+        [self trainClassifierWithString:userSampleText forLabel:dictionary[@"intent"]];
+    }
 }
 
 - (void)trainClassifierWithArray:(NSArray *)array {
@@ -53,7 +55,7 @@
     
     for (NSString *label in self.labelWords) {
         CGFloat currentScore = [self calculateScoreFromString:[string lowercaseString] againstLabel:label];
-        if (currentScore > maxScore) {
+        if (currentScore > maxScore && currentScore > 0.5) {
             maxScore = currentScore;
             currentClassification = label;
         }

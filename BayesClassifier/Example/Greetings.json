@@ -1,0 +1,51 @@
+[
+    {
+        "intent" : "greetings",
+	    "userSays" :
+        [
+			"how are you?",
+            "hi",
+            "hello",
+            "what's up",
+            "good morning",
+            "what's new",
+            "how is your day?",
+            "good day",
+            "how is it going today?",
+            "let's get started"
+         ],
+	    "responses" :
+        [
+            {
+                "type" : 0,
+                "context" : "welcome",
+                "texts" :
+                [
+                    "Hi! I'm your study guide bot. I'll be providing you with materials and help as you study and practice problem questions.",
+                    "Hello! I'm your study guide bot. I'll be providing you with materials and help as you study and practice problem questions.",
+                    "Good day! I'm your study guide bot. I'll be providing you with materials and help as you study and practice problem questions.",
+                    "Greetings! I'm your study guide bot. I'll be providing you with materials and help as you study and practice problem questions."
+                ]
+            },
+            {
+                "type" : 1,
+                "context" : "begin",
+                "texts" :
+                [
+                    "Welcome back! Shall we begin? Where would you like to start?",
+                    "Let's get started, where do you want to begin today?",
+                    "Hi, where shall we start today"
+                 ]
+            },
+            {
+                "type" : 2,
+                "context" : "help",
+                "texts" :
+                [
+                    "Hello, again... did you need some help?",
+                    "Hi... did you need help?"
+                ]
+            }
+         ]
+    }
+]
